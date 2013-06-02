@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<title>Stocks</title>
+</head>
+
+<body>
+
+	<p>Type in a symbol below to find the current value of a stock.</p>
+
+	<form action="/stocks" method="get">
+
+		<input type="text" name="symbol">
+		<button>Find</button>
+
+	</form>
+
+	<p>The result is: <%= @result %>. Now you know.</p>
+
+</body>
+
+</html>
